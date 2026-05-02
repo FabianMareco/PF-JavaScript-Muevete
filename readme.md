@@ -1,36 +1,40 @@
-📄 README – Proyecto JavaScript: Simulador de compra "MUEVETE"
+# 🧘 MUEVETE – Simulador de compra con JavaScript vanilla
 
-🧩 Alcance del proyecto 
+Aplicación web interactiva desarrollada con HTML, CSS y JavaScript puro,
+orientada a la simulación de compra de packs de clases de movimiento y
+cursos de nutrición.
 
-Este proyecto corresponde a la parte de JavaScript del trabajo final de la diplomatura. Se desarrolló una página web interactiva que simula la compra de packs de clases de movimiento y cursos de nutrición. Incluye:
+## 🚀 Tecnologías
 
-Página clases.html con 15 cards de disciplinas.
+| Tecnología | Uso |
+|---|---|
+| HTML5 + CSS3 | Estructura y estilos |
+| JavaScript (ES6+) | Lógica, DOM y manejo de datos |
+| Fetch API | Carga dinámica desde `packs.json` |
+| localStorage | Persistencia del carrito |
+| SweetAlert2 | Modales de confirmación y pago |
+| Toastify | Notificaciones de usuario |
+| Live Server | Servidor local de desarrollo |
 
-Sección de packs cargados dinámicamente desde un archivo packs.json usando fetch.
+## ✨ Funcionalidades
 
-Carrito de compras persistente en localStorage.
+- 🏋️ 15 cards de disciplinas en `clases.html`
+- 📦 Packs cargados dinámicamente desde `data/packs.json` vía `fetch`
+- 🛒 Carrito persistente con `localStorage`
+- 🎁 Opción de compra como regalo con generación de código de Gift Card
+- 🔀 Pestañas para alternar entre packs de movimiento y nutrición
+- 🔽 Scroll suave hacia la sección de packs desde los botones de disciplina
+- 💳 Modal de pago simulado al finalizar la compra
+- 📬 Formulario de contacto estilizado
 
-Opción de compra como regalo con generación de código de Gift Card.
+> Sin backend — todo el código es HTML/CSS/JS estático.
 
-Notificaciones con Toastify y modales con SweetAlert2.
-
-Pestañas para alternar entre packs de movimiento y packs de nutrición.
-
-Botones de "IR A UNA CLASE" que hacen scroll suave a la sección de packs.
-
-Totalización correcta del carrito y finalización de compra con modal de pago simulado.
-
-Formulario de contacto centrado y estilizado.
-
-No incluye backend, solo frontend estático.
-
-📁 Estructura de archivos (solo los creados/modificados)
-text
+## 📁 Estructura del proyecto
 Javascriptproyectofinalmareco/
 ├── index.html
 ├── pages/
 │   ├── nosotros.html
-│   ├── clases.html          ← principal (con packs y carrito)
+│   ├── clases.html
 │   ├── contactanos.html
 │   └── ingreso a la plataforma.html
 ├── css/
@@ -41,59 +45,30 @@ Javascriptproyectofinalmareco/
 │   └── main.js
 ├── data/
 │   └── packs.json
-├── multimedia/               (imágenes originales)
-└── fonts/                    (fuentes originales)
+├── multimedia/
+└── fonts/
 
-⚙️ Requisitos para ejecutar
-Navegador web moderno (Chrome, Firefox, Edge).
+## ⚙️ Requisitos
 
-Servidor local (recomendado: Live Server de VSCode) para evitar problemas de CORS al cargar packs.json.
+- Navegador moderno (Chrome, Firefox, Edge)
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  para evitar errores de CORS al cargar el JSON local
 
+## 🔧 Cómo ejecutar
 
-🚀 Pasos para ejecutar
-Descargar o clonar la carpeta Javascriptproyectofinalmareco.
+1. Clonar o descargar el repositorio
+2. Abrir la carpeta en Visual Studio Code
+3. Click derecho sobre `pages/clases.html` → **Open with Live Server**
+4. La app se abre en `http://127.0.0.1:5500/pages/clases.html`
 
-Abrir la carpeta en Visual Studio Code.
+> No requiere instalación de dependencias ni comandos en terminal.
 
-Instalar la extensión Live Server (si no está instalada).
+## 🧪 Flujo de prueba
 
-Hacer clic derecho sobre pages/clases.html → Open with Live Server.
-
-La página se abrirá en el navegador en http://127.0.0.1:5500/pages/clases.html.
-
-Probar los packs, agregar al carrito, finalizar compra, etc.
-
-Nota: No es necesario ejecutar ningún comando en terminal. Todo el código es HTML/CSS/JS puro.
-
-
-🧪 ¿Cómo probar el flujo completo?
-En la página clases.html, hacer clic en "COMPRAR CLASES PARA MOVERSE" o "COMPRAR CURSOS O ASESORÍAS".
-
-En cualquier pack, hacer clic en "Comprar". Se abre un modal para elegir cantidad (si aplica) y marcarlo como regalo.
-
-Confirmar. Aparece una notificación de "agregado al carrito".
-
-Hacer clic en el botón flotante 🛒 (abajo a la derecha) para ver el carrito.
-
-Eliminar ítems, vaciar carrito o finalizar compra.
-
-Al finalizar, se muestra un modal de pago simulado. Si se cancela, el carrito se vacía.
-
-
-✅ Cumplimiento de consignas de JavaScript
-Objetos y arrays, métodos map, filter, find, reduce.
-
-Funciones, condicionales, iteradores.
-
-Manipulación dinámica del DOM (renderizado de packs y carrito).
-
-Eventos (click, change).
-
-Sintaxis avanzada (arrow functions, destructuring, spread, async/await).
-
-Librerías: SweetAlert2, Toastify.
-
-Promesas y fetch para cargar packs.json.
-
-Datos desde JSON local.
-
+1. Desde `clases.html`, hacer clic en **"COMPRAR CLASES PARA MOVERSE"**
+   o **"COMPRAR CURSOS O ASESORÍAS"** para ir a los packs
+2. En cualquier pack, clic en **"Comprar"** → elegir cantidad y si es regalo
+3. Confirmar → aparece notificación de ítem agregado
+4. Abrir el carrito con el botón flotante 🛒 (esquina inferior derecha)
+5. Desde el carrito: eliminar ítems, vaciar o finalizar compra
+6. Al finalizar se muestra el modal de pago simulado
