@@ -30,6 +30,7 @@ cursos de nutrición.
 > Sin backend — todo el código es HTML/CSS/JS estático.
 
 ## 📁 Estructura del proyecto
+```
 Javascriptproyectofinalmareco/
 ├── index.html
 ├── pages/
@@ -47,6 +48,7 @@ Javascriptproyectofinalmareco/
 │   └── packs.json
 ├── multimedia/
 └── fonts/
+```
 
 ## ⚙️ Requisitos
 
